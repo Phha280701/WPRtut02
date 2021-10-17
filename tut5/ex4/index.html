@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+    <div  id= "title">
+        <b>Survey Form </b>
+    </div>
+        <div id="content">
+           
+            <table class="content" id ="information">
+                <tr> 
+                    <p id = "foreword">Let us know how can we improve freeCodeCamp</p>
+                </tr>
+                <tr>
+                    <td>*Name</td>
+                    <td>
+                        <form action="name" method="post">
+                            <input type="text" name="name" placeholder="Enter your name">
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td>*Email</td>
+                    <td>
+                        <form action="email" method="post">
+                            <input type="email" name="email" placeholder="Enter your email">
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td>*Age</td>
+                    <td>
+                        <form action="age" method="post">
+                            <input type="text" name="age" placeholder="Age">
+                        </form>
+                    </td>
+                </tr>
+            </table>
+            <table class="content" id ="option">
+                <tr>
+                    <td class ="ques">Which option best describes your current role:</td>
+                    <td class ="select">
+                        <select>
+                            <option value="student">Student</option>
+                            <option value="teacher">Teacher</option>
+
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class ="ques">How likely is that you woudld recommend freeCodeCamp to a friend?</td>
+                    <td class ="select">
+                        <form action="opinion" method="POST"></form>
+                        <input class ="option-style" type="radio" name="opinion" value="Female">
+                        <label for="Definitely"><b>Definitely</b></label>
+
+                        <form action="opinion" method="POST"></form>
+                        <input class ="option-style" type="radio" name="opinion" value="Male">
+                        <label for="Maybe"><b>Maybe</b></label>
+
+                        <form action="opinion" method="POST"></form>
+                        <input  class ="option-style" type="radio" name="opinion" value="Other">
+                        <label for="Not sure"><b>Not sure</b></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class ="ques">What you like mpst in FCC: </td>
+                    <td class ="select">
+                        <select>
+                            <option value="Select an option">Select an option</option>
+                            <option value="...">...</option>
+
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class ="ques">Thing that should be improved in the future (Check all that apply)</td>
+                    <td class ="select">
+                        <form action="opinion" method="POST"></form>
+                        <input class ="option-style" type="radio" name="opinion" value="Front-end Projects">
+                        <label for="Front-end Projects "><b>Front-end Projects</b></label>
+
+                        <form action="opinion" method="POST"></form>
+                        <input class ="option-style" type="radio" name="opinion" value="Back-end Projetcs">
+                        <label for="Back-end Projetcs"><b>Back-end Projetcs</b></label>
+
+                        <form action="opinion" method="POST"></form>
+                        <input class ="option-style" type="radio" name="opinion" value="Data visualization">
+                        <label for="Data visualization"><b>Data visualization</b></label>
+
+                        <form action="opinion" method="POST"></form>
+                        <input class ="option-style" type="radio" name="opinion" value="Open Source Community">
+                        <label for="Open Source Community "><b>Open Source Community</b></label>
+
+                        <form action="opinion" method="POST"></form>
+                        <input class ="option-style" type="radio" name="opinion" value="Gitter help roams">
+                        <label for="Gitter help roams"><b>Gitter help roams</b></label>
+
+                        <form action="opinion" method="POST"></form>
+                        <input class ="option-style" type="radio" name="opinion" value="Videos">
+                        <label for="Videos"><b>Videos</b></label>
+
+                        <form action="opinion" method="POST"></form>
+                        <input class ="option-style" type="radio" name="opinion" value="City meetups>
+                        <label for=" City meetups"><b>City meetups</b></label>
+
+                        <form action="opinion" method="POST"></form>
+                        <input class ="option-style" type="radio" name="opinion" value="Wiki">
+                        <label for="Wiki "><b>Wiki</b></label>
+
+                        <form action="opinion" method="POST"></form>
+                        <input class ="option-style" type="radio" name="opinion" value="Forum<">
+                        <label for="Forum<"><b>Forum</b></label>
+
+                        <form action="opinion" method="POST"></form>
+                        <input class ="option-style" type="radio" name="opinion" value="Additional Courses">
+                        <label for="Additional Courses"><b>Additional Courses</b></label>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class ="ques">Any comment or Suggestion? </td>
+                    <td class ="select">
+                        <textarea rows="3" cols="40">Enter your comment here...
+                        </textarea>
+                    </td>
+                </tr>
+            </table>
+            <div>
+                <button id="button" class="submit">Submit</button></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

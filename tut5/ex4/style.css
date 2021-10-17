@@ -1,0 +1,66 @@
+
+#container{
+    margin-left: 350px;
+    background-color: 	#AFEEEE;
+    overflow: hidden;
+    color: black;
+    width: 740px;
+    height: 1000px;
+    height: auto;
+    font-size: 12px;
+    line-height: 25px;
+    font-family:sans-serif;
+
+}
+#title{
+    margin-top: 50px;
+    font-size: 50px;
+    margin-left: 230px;
+}
+#content{
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    width: 700px;
+    height: 730px;
+    background-color: white;
+    color: gray;
+}
+.content{
+margin: 30px 30px 30px 30px;
+}
+#information{
+    margin: 10px 230px 20px 270px; 
+    text-align: center;
+}
+#foreword{
+    padding-top: 30px;
+    margin-left: 200px;
+}
+#option{
+    width: 600px;
+    margin: 0 70px 0 30px;
+}
+.ques{
+vertical-align: top;
+   text-align: right;
+}
+.select{
+    padding-left: 20px;
+
+}
+.option-style{
+    font-family: sans-serif;
+    color: gainsboro;
+}
+#button{
+    background-color:#009ACD;
+    color:white;
+    height: 20px;
+    border: 1px #009ACD solid;
+    border-radius: 7px;
+    height: 30px;
+    width: 70px;
+    margin: 30px 300px;
+    
+}

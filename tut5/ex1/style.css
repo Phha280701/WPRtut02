@@ -1,0 +1,105 @@
+body{
+    font-family: 'Lora', serif;
+    color: white;
+    background-image:linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('header.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header{
+    position: relative;
+    height: 800px;
+    max-width: 100%;
+    object-fit: cover;
+}
+.container{
+    max-width: 1140px;
+    margin:auto;
+}
+#cs193x{
+    padding-left: 10px;
+    font-size: 40px;
+}
+nav{
+    padding: 20px 0px 20px;
+    position: relative;
+    font-size: 20px;
+    color:white;   
+}
+header ul{
+    list-style: none;
+    font-size: 20px;
+    position: absolute;
+    top:50%;
+    right: 0;
+    transform: translateY(-50%);
+    color: white;
+    
+}
+header li{
+    display: inline;
+    list-style-type: none;
+    margin-right: 15px;
+    margin-left: 15px;
+    
+}
+#title{
+    margin-top: 120px;
+    text-align: center;
+}
+#starts-with-you{
+    margin: 5px;
+    font-size: 75px;
+}
+i{
+    margin-top: 100px;
+    font-size: 30px;
+}
+.learn-more{
+    font-family: 'Lora', serif;
+    font-size: 15px;
+    background-color: rgb(54, 179, 168);
+    border: rgb(54, 179, 168) 1px solid;
+    color: white;
+    opacity: 80%;
+    border-radius: 20px ;
+    height: 40px;
+    width: 140px;
+    transition:  0.8s ;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    cursor: pointer;
+}
+.learn-more:hover{
+    opacity: 0.6;
+}
+
+
+
+.take-actions{
+    background: none;
+    font-family: 'Lora', serif;
+    width: 180px;
+    height: 50px;
+    color:white ;
+    border: none;
+    border-radius: 20px;
+    transition:  0.8s ;
+    font-size: 20px;
+    outline: none;
+    border: 2px solid white;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.take-actions:hover{
+    color:black;
+    background-color: white;
+    
+}
+
+
+
+    
+   
