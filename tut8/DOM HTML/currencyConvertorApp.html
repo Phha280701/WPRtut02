@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     table {
+         border: solid 1px black ;
+         width: 150px;
+         height: 70px;
+         font-family: sans-serif;
+         font-size: 10px;
+         margin-left: 100px;
+         padding-right: 20px;
+         padding-top: 20px;
+         padding-bottom: 10px;
+     }
+     td{
+        padding-left: 30px;
+     }
+     button{
+         background-color: coral;
+         border: coral 1px solid;
+         border-radius: 10px;
+         color: cornsilk;
+         width: 80px;
+        }
+ 
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>Amount</td>
+            <td>From Currency</td>
+            <td>To Currency</td>
+        </tr>
+        <tr>
+            <td>
+                <input id ="moneyInput" type="text" name="Amount" placeholder="0">
+            </td>
+            <td>
+                <select>
+                    <option>VietNam</option>
+                </select>
+            </td>
+            <td>
+                <select>
+                    <option>USD</option>
+                </select>
+            </td>
+            <td>
+                <button id = "convert" type="button">Convert</button>
+            </td>
+        </tr>
+
+        
+        <script>
+           let  initialMoney;
+           let  moneyInput = docmument.getElementById('moneyInput');
+           let  convert = documnet.getElementbyId('convert');
+
+           function getMoney(){
+            initialMoney = parseFloat(moneyInput.value);
+           }
+
+           covert.addEventListener('click', function(){
+               getMoney();
+               result.innerText = "Result: " + (initialMoney * 2.3); 
+           });
+
+        </script>
+    </table>
+</body>
+
+</html>

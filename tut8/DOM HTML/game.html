@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            margin-top: 30px;
+            margin-left: 100px;
+            height: 50px;
+            width: 50px;
+            background-color: coral;
+            border: coral;
+            color: cornsilk;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="game" width="800" height="600" style="border: 3px solid #000000"></canvas>
+    <br>
+    <button onclick='moveUp();'> ^ </button>
+    <button onclick='moveLeft();'> < </button>
+    <button onclick='moveRight();'> > </button>
+    <button onclick='moveDown();'> v </button>
+
+            <script>
+                let gameContext = document.getElementById("game").getContext("2d");
+                let rectX = 0;
+                let rectY = 0;
+                let speed = 50;
+
+                gameContext.beginPath();
+                gameContext.fillStyle = '#fa4b2a';
+                gameContext.fillRect(rectX, rectY, 150, 100);
+
+                function draw() {
+                    gameContext.beginPath();
+                    gameContext.fillStyle = ' #fa4b2a ';
+                    gameContext.fillRect(rectX, rectY, 150, 100);
+                }
+
+
+                function moveUp() {
+                    gameContext.clearRect(rectX, rectY, 150, 100);
+                    if (rectY > 0) {
+                        rectY -= speed;
+                    }
+                    draw()
+                }
+
+                function moveDown() {
+                    gameContext.clearRect(rectX, rectY, 150, 100);
+                    if (rectY < 500){
+                        rectY += speed;
+                    }
+                    draw()
+                }
+
+                function moveRight() {
+                    gameContext.clearRect(rectX, rectY, 150, 100);
+                    if (rectX < 650) {
+                        rectX += speed;
+                    }
+                    draw()
+                }
+
+                function moveLeft() {
+                    gameContext.clearRect(rectX, rectY, 150, 100);
+                    if (rectX > 0) {
+                        rectX -= speed;
+                    }
+                    draw()
+                }
+
+            </script>
+</body>
+
+</html>
