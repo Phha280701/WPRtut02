@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a;
+        let b;
+        let i;
+        let total = 0;
+
+        a = prompt("insert a: ");
+        a = parseInt(a);
+        b = prompt("insert b: ");
+        b = parseInt(b);
+        alert("Result will be caculated from " + a + " to " + b);
+
+        for(i = a; i <= b; i++) {
+            total += i;
+        }
+        alert("total is " + total);
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #ok {
+            background-color: cornflowerblue;
+            color: white;
+            border: 1px cornflowerblue solid;
+            border-radius: 3px;
+            width: 50px;
+            height: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Nhap vao 1 so: </p>
+    <input type="number" id="number">
+    <button id="ok" onclick=" reverse()">OK</button>
+    <button id="cancel">Cancel</button>
+    <script>
+
+        let n;
+        let i;
+        let number = document.getElementById('number');
+        let ok = document.getElementById('ok');
+        let numberReversed = 0;
+        let a = 0;
+
+        n = parseInt(number);
+        function reverse() {
+            while (n > 0) {
+                alert(n)
+                a = n % 10;
+                numberReversed = numberReversed * 10 + a;
+                n = n / 10;
+            }
+            alert(remain);
+        }
+    </script>
+</body>
+
+</html>

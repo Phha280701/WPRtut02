@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            width: 300px;
+            height: 200px;
+            color: cornflowerblue;
+            background-color: cornsilkS;
+            font-size: 60px;
+            border: 3px solid cornflowerblue;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<button onclick="choiw()">PLAY</button>
+<body>
+    <script>
+        let range;
+        let value;
+        let value2;
+        let value3;
+        let number;
+        function choiw (){
+           range = prompt("Nhập khoảng số: ");
+           alert("random from 0 to " + range);
+           number= Math.floor(Math.random() * (range));
+           value = prompt("Guess number:");
+           alert("Your number is: " + value);
+           if(value == number){
+               alert("win!!!");
+           }else{
+               alert("wrong number! Try again!!!");
+               value2 = prompt("Try again: ");
+               if(value2 == number){
+                alert("win!!!");
+               }else{
+                alert("wrong number! Try again!!!");
+                value3 = prompt("Try again: ");
+                if(value3 == number){
+                alert("win!!!");
+               }else{
+                   alert("Game over!!!");
+               }
+               }
+           }
+
+        }
+
+    </script>
+    
+</body>
+</html>
