@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <script src="assets/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <title>Document</title>
+    <style>
+        .row {
+            margin-top: 10px;
+        }
+
+        .input {
+            margin-right: 40px;
+            width: 340px;
+            border: 1px solid #0177CC;
+            border-radius: 1px;
+        }
+
+        button {
+            background-color: #0177CC;
+            border: 1px solid #0177CC;
+            border-radius: 3px;
+            color: aliceblue;
+            font-size: 15px;
+            width: 70px;
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">First name</div>
+        </div>
+
+        <div class="row">
+            <div class="col-12"><input class="input" type="text" id="firstName" required> </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">Last name</div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 "><input class="input" type="text" id="lastName" required> </div>
+        </div>
+
+        <div class="row">
+            <div class="col-2">
+                <form action="determine-gender" method="POST"></form>
+                <input type="radio" name="gender" value="Male">
+                <label for="Male">Male</label>
+            </div>
+
+            <div class="col-2">
+                <form action="determine-gender" method="POST"></form>
+                <input type="radio" name="gender" value="Female">
+                <label for="Female"> Female</label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <input class="input" type="date" id="start" name="trip-start" value="mm-dd-yyyy">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <button onclick="display()">Submit</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        let firstName, lastName;
+        firstNameInput = document.getElementById('firstName');
+        lastNameInput = document.getElementById('lastName');
+
+        function display() {
+            firstName = firstNameInput.value;
+            lastName = lastNameInput.value;
+            document.write('First Name: ' + firstName);
+            document.write("\n" + 'Last Name: ' + lastName);
+        }
+    </script>
+</body>
+
+
+</html>
